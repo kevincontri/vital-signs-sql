@@ -2,6 +2,7 @@ CREATE TABLE pacientes (
     id INTEGER,
     nome TEXT,
     idade INTEGER,
+    sexo TEXT,
     motivo_internado TEXT,
     PRIMARY KEY (id)
 );
