@@ -17,14 +17,10 @@ I'm building it as my personal project while learning SQL (Week 7 of CS50).
 
 ## 🚀 How to run
 (using SQLite or MySQL – depending on your choice)
-
 sqlite3 hospital.db
 .read schema.sql
 .read seed.sql
 .read queries.sql
-
-markdown
-Copiar código
 
 ## 🌱 Future ideas
 - Add alerts (flags) for abnormal vital signs
