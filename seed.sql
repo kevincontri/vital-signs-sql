@@ -1,7 +1,7 @@
-INSERT INTO pacientes (id, nome, idade, motivo_internado)
-VALUES (1,'Paulo A',59,'Sepse'),
-       (2,'Mariana A.',42,'Crise Hipertensiva')
-       (3,'Carla S.',65, 'Pneumonia Bacteriana');
+INSERT INTO pacientes (id, nome, idade, sexo, motivo_internado)
+VALUES (1,'Paulo A',59,'Masculino','Sepse'),
+       (2,'Mariana A.',42,'Feminino','Crise Hipertensiva')
+       (3,'Carla S.',65,'Feminino','Pneumonia Bacteriana');
 
 INSERT INTO sinais_vitais(id_paciente, pa, fc, fr, tax, sat)
 VALUES  (1,'120x80',80,20,36.5,'97%'),
