@@ -16,13 +16,11 @@ I'm building it as my personal project while learning SQL (Week 7 of CS50).
 - Patients with tachypnea (Respiratory rate > 20)
 
 ## 🚀 How to run
-(using SQLite or MySQL – depending on your choice)
 sqlite3 hospital.db
 .read schema.sql
 .read seed.sql
 .read queries.sql
 
 ## 🌱 Future ideas
-- Add alerts (flags) for abnormal vital signs
+- Add alerts for abnormal vital signs
 - Add medication records and nurse notes
-- Create a dashboard using Python or a web app
