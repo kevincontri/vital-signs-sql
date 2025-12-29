@@ -1,20 +1,19 @@
-CREATE TABLE pacientes (
-    id INTEGER,
-    nome TEXT,
-    idade INTEGER,
-    sexo TEXT,
-    motivo_internado TEXT,
-    PRIMARY KEY (id)
+CREATE TABLE IF NOT EXISTS pacientes (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    nome TEXT NOT NULL,
+    idade INTEGER NOT NULL,
+    motivo_internado TEXT NOT NULL
 );
 
-CREATE TABLE sinais_vitais (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    id_paciente INTEGER,
-    data_hora DATETIME DEFAULT CURRENT_TIMESTAMP,
-    pa VARCHAR(10),
-    fc INTEGER,
-    fr INTEGER,
-    tax REAL, sat VARCHAR(10),
+CREATE TABLE IF NOT EXISTS sinais_vitais (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    id_paciente INTEGER NOT NULL,
+    data_hora DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    pa NOT NULL VARCHAR(10),
+    fc NOT NULL INTEGER,
+    fr NOT NULL INTEGER,
+    tax NOT NULL REAL, 
+    sat NOT NULL VARCHAR(10),
     FOREIGN KEY (id_paciente) REFERENCES pacientes (id)
 );
 CREATE TABLE sqlite_sequence(name,seq);
