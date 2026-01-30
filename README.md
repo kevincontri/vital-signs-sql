@@ -23,7 +23,3 @@ sqlite3 hospital.db
 .read seed.sql
 
 .read queries.sql
-
-## Future ideas
-- Add alerts for abnormal vital signs
-- Add medication records and nurse notes
